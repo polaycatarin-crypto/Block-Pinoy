@@ -1,0 +1,173 @@
+.game-ui {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ui-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.ui-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.title-section {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.game-title {
+  font-size: 28px;
+  margin: 0;
+  background: linear-gradient(135deg, #1e40af 0%, #dc2626 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.tagline {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  font-style: italic;
+}
+
+.stage-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.stage-label {
+  font-size: 12px;
+  color: #999;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.stage-number {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+}
+
+.ui-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.coins-display {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff3cd;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.coin-icon {
+  font-size: 24px;
+}
+
+.coin-amount {
+  font-size: 18px;
+  color: #333;
+}
+
+.logout-btn {
+  padding: 10px 16px;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.logout-btn:hover {
+  background: #c82333;
+}
+
+.boosts-section {
+  padding-top: 15px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.boosts-section h3 {
+  margin: 0 0 15px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.boosts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 10px;
+}
+
+.boost-item {
+  background: #f8f9fa;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.boost-item:hover {
+  border-color: #667eea;
+  background: #f0f4ff;
+}
+
+.boost-icon {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+.boost-count {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.boost-name {
+  font-size: 12px;
+  color: #666;
+  text-transform: capitalize;
+}
+
+@media (max-width: 768px) {
+  .ui-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ui-left {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .ui-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .boosts-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
